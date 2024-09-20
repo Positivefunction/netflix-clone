@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('/IMAGES/image.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2; 
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header .user button {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 2; /* Ensures content is above the overlay */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .input {
+    margin-top: 10px;
+}
+
+.hero input {
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+
+.carousel {
+    padding: 20px 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.carousel h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.carousel .movie-thumbnails {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carousel .movie-thumbnails img {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+footer {
+    padding: 20px 50px;
+    color: white;
+    background-color: #111;
+    position: relative;
+    z-index: 2;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+    margin-right: 20px;
+}
